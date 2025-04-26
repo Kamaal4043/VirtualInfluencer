@@ -1,0 +1,144 @@
+Error in condition mimic-human, healthcare: 'QuantumCircuit' object has no attribute 'bind_parameters'
+Traceback (most recent call last):
+  File "E:\VI\VI8.py", line 931, in run_condition
+    circuit, mitigator = create_influencer_state(circuit, influencer_qubits, influencer_type, t, depth)
+                         ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VI\VI8.py", line 174, in create_influencer_state
+    circuit.bind_parameters({theta: 0.5*np.pi, phi: 0.3*np.pi})
+    ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuantumCircuit' object has no attribute 'bind_parameters'. Did you mean: 'num_parameters'?
+
+
+
+Error in condition animated-human, entertainment: 'QuantumCircuit' object has no attribute 'bind_parameters'
+Traceback (most recent call last):
+  File "E:\VI\VI8.py", line 931, in run_condition
+    circuit, mitigator = create_influencer_state(circuit, influencer_qubits, influencer_type, t, depth)
+                         ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VI\VI8.py", line 186, in create_influencer_state
+    circuit.bind_parameters({time_param: t})
+    ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuantumCircuit' object has no attribute 'bind_parameters'. Did you mean: 'num_parameters'?
+
+meters'?
+
+Error in condition animated-human, healthcare: 'QuantumCircuit' object has no attribute 'bind_parameters'
+Traceback (most recent call last):
+  File "E:\VI\VI8.py", line 931, in run_condition
+    circuit, mitigator = create_influencer_state(circuit, influencer_qubits, influencer_type, t, depth)
+                         ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VI\VI8.py", line 186, in create_influencer_state
+    circuit.bind_parameters({time_param: t})
+    ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuantumCircuit' object has no attribute 'bind_parameters'. Did you mean: 'num_parameters'?
+
+Error in condition animated-human, education: 'QuantumCircuit' object has no attribute 'bind_parameters'
+Traceback (most recent call last):
+  File "E:\VI\VI8.py", line 931, in run_condition
+    circuit, mitigator = create_influencer_state(circuit, influencer_qubits, influencer_type, t, depth)
+                         ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VI\VI8.py", line 186, in create_influencer_state
+    circuit.bind_parameters({time_param: t})
+    ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuantumCircuit' object has no attribute 'bind_parameters'. Did you mean: 'num_parameters'?
+
+Error in condition non-human, healthcare: 'QuantumCircuit' object has no attribute 'bind_parameters'
+Traceback (most recent call last):
+  File "E:\VI\VI8.py", line 931, in run_condition
+    circuit, mitigator = create_influencer_state(circuit, influencer_qubits, influencer_type, t, depth)
+                         ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VI\VI8.py", line 186, in create_influencer_state
+    circuit.bind_parameters({time_param: t})
+    ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuantumCircuit' object has no attribute 'bind_parameters'. Did you mean: 'num_parameters'?
+
+Error in condition non-human, entertainment: 'QuantumCircuit' object has no attribute 'bind_parameters'
+Traceback (most recent call last):
+  File "E:\VI\VI8.py", line 931, in run_condition
+    circuit, mitigator = create_influencer_state(circuit, influencer_qubits, influencer_type, t, depth)
+                         ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VI\VI8.py", line 186, in create_influencer_state
+    circuit.bind_parameters({time_param: t})
+    ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuantumCircuit' object has no attribute 'bind_parameters'. Did you mean: 'num_parameters'?
+
+Error in condition non-human, education: 'QuantumCircuit' object has no attribute 'bind_parameters'
+Traceback (most recent call last):
+  File "E:\VI\VI8.py", line 931, in run_condition
+    circuit, mitigator = create_influencer_state(circuit, influencer_qubits, influencer_type, t, depth)
+                         ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VI\VI8.py", line 186, in create_influencer_state
+    circuit.bind_parameters({time_param: t})
+    ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuantumCircuit' object has no attribute 'bind_parameters'. Did you mean: 'num_parameters'?
+
+Error in condition caretaker, entertainment: 'QuantumCircuit' object has no attribute 'bind_parameters'
+Traceback (most recent call last):
+  File "E:\VI\VI8.py", line 931, in run_condition
+    circuit, mitigator = create_influencer_state(circuit, influencer_qubits, influencer_type, t, depth)
+                         ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VI\VI8.py", line 186, in create_influencer_state
+    circuit.bind_parameters({time_param: t})
+    ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuantumCircuit' object has no attribute 'bind_parameters'. Did you mean: 'num_parameters'?
+
+Error in condition caretaker, education: 'QuantumCircuit' object has no attribute 'bind_parameters'
+Traceback (most recent call last):
+  File "E:\VI\VI8.py", line 931, in run_condition
+    circuit, mitigator = create_influencer_state(circuit, influencer_qubits, influencer_type, t, depth)
+                         ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VI\VI8.py", line 186, in create_influencer_state
+    circuit.bind_parameters({time_param: t})
+    ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuantumCircuit' object has no attribute 'bind_parameters'. Did you mean: 'num_parameters'?
+
+Error in condition caretaker, healthcare: 'QuantumCircuit' object has no attribute 'bind_parameters'
+Traceback (most recent call last):
+  File "E:\VI\VI8.py", line 931, in run_condition
+    circuit, mitigator = create_influencer_state(circuit, influencer_qubits, influencer_type, t, depth)
+                         ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VI\VI8.py", line 186, in create_influencer_state
+    circuit.bind_parameters({time_param: t})
+    ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuantumCircuit' object has no attribute 'bind_parameters'. Did you mean: 'num_parameters'?
+
+Error in condition educator, entertainment: 'QuantumCircuit' object has no attribute 'bind_parameters'
+Traceback (most recent call last):
+  File "E:\VI\VI8.py", line 931, in run_condition
+    circuit, mitigator = create_influencer_state(circuit, influencer_qubits, influencer_type, t, depth)
+                         ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VI\VI8.py", line 186, in create_influencer_state
+    circuit.bind_parameters({time_param: t})
+    ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuantumCircuit' object has no attribute 'bind_parameters'. Did you mean: 'num_parameters'?
+
+Error in condition educator, healthcare: 'QuantumCircuit' object has no attribute 'bind_parameters'
+Traceback (most recent call last):
+  File "E:\VI\VI8.py", line 931, in run_condition
+    circuit, mitigator = create_influencer_state(circuit, influencer_qubits, influencer_type, t, depth)
+                         ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VI\VI8.py", line 186, in create_influencer_state
+    circuit.bind_parameters({time_param: t})
+    ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuantumCircuit' object has no attribute 'bind_parameters'. Did you mean: 'num_parameters'?
+
+Error in condition educator, education: 'QuantumCircuit' object has no attribute 'bind_parameters'
+Traceback (most recent call last):
+  File "E:\VI\VI8.py", line 931, in run_condition
+    circuit, mitigator = create_influencer_state(circuit, influencer_qubits, influencer_type, t, depth)
+                         ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VI\VI8.py", line 186, in create_influencer_state
+    circuit.bind_parameters({time_param: t})
+    ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuantumCircuit' object has no attribute 'bind_parameters'. Did you mean: 'num_parameters'?
+
+Error in condition companion, entertainment: 'QuantumCircuit' object has no attribute 'bind_parameters'
+Traceback (most recent call last):
+  File "E:\VI\VI8.py", line 931, in run_condition
+    circuit, mitigator = create_influencer_state(circuit, influencer_qubits, influencer_type, t, depth)
+                         ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VI\VI8.py", line 186, in create_influencer_state
+    circuit.bind_parameters({time_param: t})
+    ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuantumCircuit' object has no attribute 'bind_parameters'. Did you mean: 'num_parameters'?
+

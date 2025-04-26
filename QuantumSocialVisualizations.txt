@@ -1,0 +1,110 @@
+\documentclass[border=3pt]{standalone}
+\usepackage{quantikz}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usetikzlibrary{positioning, arrows.meta, decorations.pathmorphing, shapes, matrix}
+
+\begin{document}
+
+% 1. Quantum Circuit for Social Interaction
+\begin{tikzpicture}
+    \node[scale=0.8] (circuit) {
+        \begin{quantikz}[row sep=0.4cm, column sep=0.6cm]
+            \lstick{\textcolor{red}{VI Qubits}} & \gate{R_y(\theta)}\qwbundle[alternate]{2} & \ctrl{1} & \gate{R_z(\phi)} & \meter{} & \qw \\
+            \lstick{\textcolor{blue}{Consumer Qubits}} & \qw & \targ{} & \gate{R_y(\lambda)} & \meter{} & \qw \\
+            \lstick{\textcolor{green!70!black}{Context Qubits}} & \gate{H} & \ctrl{-1} & \qw & \meter{} & \qw
+        \end{quantikz}
+    };
+    
+    % Annotations
+    \node[above=0.1cm of circuit, align=center] {Quantum Circuit Model of VI-Consumer Interaction};
+    \draw[-Latex, red] (1.5,-1.8) -- ++(0,-0.5) node[below] {Empathy ($\theta$)};
+    \draw[-Latex, blue] (3.2,-2.5) -- ++(0,-0.5) node[below] {Influence (CX)};
+    \draw[-Latex, green!70!black] (5.0,-3.2) -- ++(0,-0.5) node[below] {Context (H)};
+\end{tikzpicture}
+
+% 2. Bloch Sphere for Emotional States
+\begin{tikzpicture}[scale=2.5]
+    % Bloch Sphere
+    \draw (0,0) circle (1cm);
+    \draw[dashed] (-1,0) arc (180:360:1 and 0.5);
+    \draw (0,1) arc (90:270:0.5 and 1);
+    
+    % Axes
+    \draw[-Latex] (0,0) -- (0,1.2) node[above] {$\left|0\right\rangle$ (High Arousal)};
+    \draw[-Latex] (0,0) -- (0,-1.2) node[below] {$\left|1\right\rangle$ (Low Arousal)};
+    \draw[-Latex] (0,0) -- (1.2,0) node[right] {$\left|+\right\rangle$ (Positive Valence)};
+    \draw[-Latex] (0,0) -- (-1.2,0) node[left] {$\left|-\right\rangle$ (Negative Valence)};
+    
+    % State vectors
+    \draw[red, -Latex, thick] (0,0) -- (0.7,0.7) node[midway, above left] {$\left|\psi_1\right\rangle$ (Excitement)};
+    \draw[blue, -Latex, thick] (0,0) -- (-0.5,-0.5) node[midway, below right] {$\left|\psi_2\right\rangle$ (Disappointment)};
+    \draw[green!70!black, -Latex, thick] (0,0) -- (0.3,-0.3) node[right=0.1cm] {$\left|\psi_3\right\rangle$ (Neutral)};
+    
+    % Title
+    \node[above=1.5cm, align=center] {Bloch Sphere Representation of Emotional States};
+\end{tikzpicture}
+
+% 3. Entanglement Network for Social Bonds
+\begin{tikzpicture}[
+    node distance=2cm,
+    vi/.style={rectangle, draw=red!60, fill=red!5, thick, minimum size=1cm},
+    consumer/.style={circle, draw=blue!60, fill=blue!5, thick, minimum size=1cm},
+    product/.style={regular polygon, regular polygon sides=3, draw=green!60, fill=green!5, thick, minimum size=1cm},
+    bond/.style={-Latex, thick, shorten >=1pt, shorten <=1pt}
+]
+    % Nodes
+    \node[vi] (vi1) {Mimic-Human};
+    \node[vi, right=of vi1] (vi2) {Animated};
+    \node[consumer, below=of vi1] (c1) {Consumer A};
+    \node[consumer, below=of vi2] (c2) {Consumer B};
+    \node[product, below right=1cm of c1] (p1) {Product};
+    
+    % Edges (Entanglement)
+    \draw[bond, red] (vi1) -- node[midway, left] {Strong} (c1);
+    \draw[bond, blue, dashed] (vi2) -- node[midway, right] {Weak} (c2);
+    \draw[bond, green!70!black] (c1) -- (p1);
+    \draw[bond, green!70!black, dotted] (c2) -- (p1);
+    
+    % Legend
+    \node[above=0.5cm of vi1] {Virtual Influencers};
+    \node[below=0.5cm of p1] {Products};
+    \draw[bond, red] (3,-3.5) -- ++(1,0) node[right] {High Social Presence};
+    \draw[bond, blue, dashed] (3,-4.0) -- ++(1,0) node[right] {Low Social Presence};
+\end{tikzpicture}
+
+% 4. Quantum Kernel Heatmap
+\begin{tikzpicture}
+    \matrix (heatmap) [
+        matrix of nodes,
+        nodes={draw, minimum size=1cm, anchor=center},
+        column sep=-\pgflinewidth,
+        row sep=-\pgflinewidth,
+        nodes in empty cells
+    ] {
+        |[fill=red!20]| 0.95 & |[fill=red!40]| 0.80 & |[fill=red!10]| 0.60 \\
+        |[fill=red!30]| 0.85 & |[fill=red!50]| 0.90 & |[fill=red!20]| 0.70 \\
+        |[fill=red!10]| 0.65 & |[fill=red!20]| 0.75 & |[fill=red!40]| 0.85 \\
+    };
+    
+    % Row/Column labels
+    \foreach \i/\text in {1/Mimic-Human, 2/Animated, 3/Non-Human} {
+        \node[left=0.2cm of heatmap-\i-1] {\text};
+        \node[above=0.2cm of heatmap-1-\i] {\text};
+    }
+    
+    % Colorbar
+    \node[right=1cm of heatmap-2-3] {\begin{tikzpicture}
+        \shade[left color=red!10, right color=red!60] (0,0) rectangle (0.5,3);
+        \draw (0,0) rectangle (0.5,3);
+        \foreach \y/\val in {0/0.0, 1/0.5, 2/1.0, 3/1.5} {
+            \node[left=0.1cm] at (0,\y) {\val};
+        }
+        \node[rotate=90, above=0.5cm] at (0.25,1.5) {Fidelity};
+    \end{tikzpicture}};
+    
+    % Title
+    \node[above=1cm of heatmap] {Quantum Kernel Matrix: VI-Consumer Compatibility};
+\end{tikzpicture}
+
+\end{document}

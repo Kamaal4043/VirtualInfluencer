@@ -1,0 +1,38 @@
+Error in condition companion, healthcare: 'NoneType' object has no attribute 'qubits'
+Traceback (most recent call last):
+  File "E:\VI\VI8.py", line 933, in run_condition
+    circuit, mitigator = create_influencer_state(circuit, influencer_qubits, influencer_type, t, depth)
+                         ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VI\VI8.py", line 189, in create_influencer_state
+    circuit, mitigator = apply_error_correction(circuit, qubits)
+                         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "E:\VI\VI8.py", line 144, in apply_error_correction
+    mitigator = LocalReadoutMitigator(backend=backend)
+  File "E:\VI\qspf\Lib\site-packages\qiskit\utils\deprecation.py", line 97, in wrapper
+    return func(*args, **kwargs)
+  File "E:\VI\qspf\Lib\site-packages\qiskit\result\mitigation\local_readout_mitigator.py", line 65, in __init__
+    assignment_matrices = self._from_backend(backend, qubits)
+  File "E:\VI\qspf\Lib\site-packages\qiskit\result\mitigation\local_readout_mitigator.py", line 304, in _from_backend
+    backend_qubits = backend.properties().qubits
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'qubits'
+
+Error in condition companion, education: 'NoneType' object has no attribute 'qubits'
+Traceback (most recent call last):
+  File "E:\VI\VI8.py", line 933, in run_condition
+    circuit, mitigator = create_influencer_state(circuit, influencer_qubits, influencer_type, t, depth)
+                         ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VI\VI8.py", line 189, in create_influencer_state
+    circuit, mitigator = apply_error_correction(circuit, qubits)
+                         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "E:\VI\VI8.py", line 144, in apply_error_correction
+    mitigator = LocalReadoutMitigator(backend=backend)
+  File "E:\VI\qspf\Lib\site-packages\qiskit\utils\deprecation.py", line 97, in wrapper
+    return func(*args, **kwargs)
+  File "E:\VI\qspf\Lib\site-packages\qiskit\result\mitigation\local_readout_mitigator.py", line 65, in __init__
+    assignment_matrices = self._from_backend(backend, qubits)
+  File "E:\VI\qspf\Lib\site-packages\qiskit\result\mitigation\local_readout_mitigator.py", line 304, in _from_backend
+    backend_qubits = backend.properties().qubits
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'qubits'
+
